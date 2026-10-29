@@ -1,0 +1,46 @@
+
+/* Larger screens */
+
+@media (min-width: 740px) {
+    header {
+        flex-wrap: nowrap;
+        padding: 0.75rem 1rem;
+        min-height: 75px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    nav {
+        width: auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1.5rem;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+        padding: 0.25rem 0;
+    }
+
+    main h2 {
+        padding: 0.2rem 1rem 1.5rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+}

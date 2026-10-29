@@ -1,0 +1,33 @@
+/* Larger View */
+@media (min-width: 740px) {
+
+     header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        font-family: var(--header-font);
+    }
+
+    /* hamburger */
+    .menu-button {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        list-style-type: none;
+        gap: 1.5rem;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

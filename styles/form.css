@@ -1,0 +1,164 @@
+:root {
+  --primary-color: #4a154b;
+  --secondary-color: #611f69;
+  --background-color: #1a1a1a;
+  --card-bg: #2d2d2d;
+  --text-color: #f4f4f4;
+  --accent-color: #e0a96d;
+  --border-radius: 8px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 1.5rem;
+  border-bottom: 3px solid var(--accent-color);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+form {
+  background-color: var(--card-bg);
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
+}
+
+.field {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label, .label-text {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.optional {
+  font-weight: normal;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+select, input[type="date"], input[type="text"], textarea {
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background-color: #383838;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+select:focus, input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.rating-group {
+  display: flex;
+  gap: 1rem;
+  background-color: #383838;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #555;
+}
+
+.rating-group label {
+  font-weight: normal;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.checkbox-group {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid #555;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #383838;
+}
+
+.checkbox-group legend {
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.checkbox-group label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.submit-btn input[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.85rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn input[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 2px solid var(--accent-color);
+}
+
+footer p {
+  margin: 0.3rem 0;
+}

@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD 131 | Temple Album</title>
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals temple album with filters for old, new, large, and small temples.">
+    <meta name="author" content="Chrissie">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+
+        <button class="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+            ☰
+        </button>
+
+        <nav id="primary-navigation">
+            <ul>
+                <li><a href="#" class="filter-link active" data-filter="home">Home</a></li>
+                <li><a href="#" class="filter-link" data-filter="old">Old</a></li>
+                <li><a href="#" class="filter-link" data-filter="new">New</a></li>
+                <li><a href="#" class="filter-link" data-filter="large">Large</a></li>
+                <li><a href="#" class="filter-link" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="page-title">Home</h2>
+
+        <div class="container" id="temple-container">
+            <!-- JavaScript inserts the temple cards here. -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Chrissie. South Africa</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

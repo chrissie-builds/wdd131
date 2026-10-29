@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Spider knowledge quiz — explore spider habitats, behaviour and the surprising world of arachnids.">
+        <meta name="author" content="The 8 Legged Web">
+        <title>
+            Spider knowledge quiz | The 8 Legged Web
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;family=Source+Serif+4:wght@400;600;700&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <script src="scripts/site.js" defer></script>
+        <script src="../scripts/getdates.js" defer></script>
+    </head>
+
+    <body>
+        <a class="skip" href="#main">
+            Skip to content
+        </a>
+        <header>
+            <div class="nav-wrap">
+                <a class="brand" href="index.html">
+                    <span aria-hidden="true">
+                        🕷️
+                    </span>
+                    The 8 Legged Web
+                </a>
+                <button class="menu" type="button" aria-expanded="false" aria-controls="navigation">
+                    Menu ☰
+                </button>
+                <nav id="navigation" aria-label="Main navigation">
+                    <a href="index.html">
+                        Home
+                    </a>
+                    <a href="species.html">
+                        Species guide
+                    </a>
+                    <a href="quiz.html" aria-current="page">
+                        Quiz
+                    </a>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                    <a href="sources.html">
+                        Sources
+                    </a>
+                </nav>
+
+            </div>
+        </header>
+
+        <main id="main">
+            <section class="page-intro">
+                <p class="eyebrow">
+                    The curiosity challenge
+                </p>
+                <h1>
+                    Follow the thread.
+                    <br>
+                    Test your knowledge.
+                </h1>
+                <p>
+                    Answer five questions about spider anatomy, silk and hunting. You’ll get an explanation for every answer.
+                </p>
+            </section>
+
+            <section class="quiz-panel">
+                <p id="best-score">
+                    Your best score will appear here.
+                </p>
+                <form id="quiz-form">
+                    <div id="quiz-questions">
+                    </div>
+                    <button type="submit">
+                        Check my answers →
+                    </button>
+                </form>
+                <div id="quiz-result" role="status" tabindex="-1">
+                </div>
+                <button id="retry" type="button" hidden>
+                    Try again
+                </button>
+                <noscript>
+                    <p>
+                        Enable JavaScript to use the interactive quiz. You can still explore the species guide.
+                    </p>
+                </noscript>
+            </section>
+
+        </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Chrissie. South Africa</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+    </body>
+</html>

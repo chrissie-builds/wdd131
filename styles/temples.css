@@ -1,0 +1,101 @@
+:root {
+    --header-font: 'Abril Fatface';
+    --body-font: 'Lato';
+    --header-color: #8fc0a9;
+    --secondary-color: #c8d5b9;
+    --tertiary-color: #faf3dd;  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 20px;
+    background-color: var(--header-color);
+    font-family: var(--header-font);
+}
+
+main {
+    background-color: var(--tertiary-color);
+}
+
+main h1{
+    font-family: var(--header-font);
+    text-align: center;
+}
+
+/*Mobile View*/
+nav ul {
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    font-size: larger;
+    text-decoration: none;
+    transition: 0.4s;
+    border-bottom: 2px solid transparent;
+    color: black;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #535050;
+}
+
+
+figcaption {
+    font-family: var(--body-font);
+}
+
+footer {
+    background-color: var(--header-color);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+    font-family: var(--header-font);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    font-family: var(--body-font);
+    padding-top: 0.5rem;
+}
+
+/*for hamburger button */
+.menu-button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+    margin-left: auto;
+}
+
+nav ul.show {
+    display: flex;
+}

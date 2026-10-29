@@ -1,0 +1,232 @@
+/* Colour palette */
+        :root {
+            --eggshell: #f4f1de;
+            --burnt-peach: #e07a5f;
+            --twilight-indigo: #3d405b;
+        }
+
+        /* General styles */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--eggshell);
+            color: var(--twilight-indigo);
+            font-family: "Source Serif 4", serif;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: "Oswald", sans-serif;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 3px solid var(--burnt-peach);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+        }
+
+        a {
+            color: var(--twilight-indigo);
+        }
+
+        header {
+            background-color: var(--twilight-indigo);
+            color: var(--eggshell);
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header p {
+            margin-bottom: 0;
+        }
+
+        .logo {
+            font-size: 2rem;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        section {
+            background-color: white;
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgb(61 64 91 / 10%);
+        }
+
+        .accent {
+            color: var(--burnt-peach);
+            font-weight: bold;
+        }
+
+        /* Colour samples */
+        .color-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        .color-card {
+            border: 1px solid #d6d2c1;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .swatch {
+            height: 90px;
+            border-bottom: 1px solid #d6d2c1;
+        }
+
+        .color-details {
+            padding: 0.75rem;
+        }
+
+        .color-details p {
+            margin: 0.25rem 0;
+        }
+
+        /* Typography samples */
+        .heading-sample {
+            font-family: "Oswald", sans-serif;
+            font-size: 1.8rem;
+        }
+
+        .body-sample {
+            font-family: "Source Serif 4", serif;
+            font-size: 1.1rem;
+        }
+
+        /* Wireframes */
+        .wireframe {
+            border: 2px solid var(--twilight-indigo);
+            padding: 0.75rem;
+            background-color: var(--eggshell);
+            border-radius: 6px;
+        }
+
+        .wire-block {
+            border: 2px dashed var(--twilight-indigo);
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            text-align: center;
+            min-width: 0;
+        }
+
+        .wire-header,
+        .wire-footer {
+            background-color: var(--twilight-indigo);
+            color: var(--eggshell);
+            padding: 0.75rem;
+            text-align: center;
+        }
+
+        .wire-hero {
+            background-color: var(--burnt-peach);
+            color: var(--twilight-indigo);
+            padding: 1.5rem 0.5rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .wire-card {
+            background-color: white;
+            border: 1px solid var(--twilight-indigo);
+            padding: 0.75rem;
+            text-align: center;
+        }
+
+        .wire-image {
+            background-color: #dedbd0;
+            padding: 1.5rem 0.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .wire-button {
+            display: inline-block;
+            border: 2px solid var(--twilight-indigo);
+            padding: 0.25rem 0.75rem;
+            margin-top: 0.5rem;
+        }
+
+        .wireframe-label {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: var(--twilight-indigo);
+            color: var(--eggshell);
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Wider screens */
+        @media screen and (min-width: 650px) {
+            main {
+                padding: 2rem;
+            }
+
+            section {
+                padding: 2rem;
+            }
+
+            .color-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .desktop-wireframe {
+                max-width: 850px;
+                margin: 0 auto;
+            }
+
+            .wire-nav {
+                display: flex;
+                justify-content: space-between;
+                gap: 1rem;
+            }
+
+            .wire-main-layout {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                gap: 1rem;
+                align-items: start;
+            }
+
+            .wire-card-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0.75rem;
+            }
+
+            .wire-card-grid .wire-block {
+                margin: 0;
+            }
+
+            .wire-hero {
+                padding: 3rem 1rem;
+            }
+        }

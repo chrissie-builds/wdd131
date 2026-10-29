@@ -1,0 +1,131 @@
+@media screen and (min-width: 650px) {
+    main {
+        padding: 0 32px;
+    }
+
+    section {
+        padding: 2rem;
+        margin: 1.5rem 0;
+    }
+
+    .nav-wrap {
+        padding: 24px 32px;
+    }
+
+    .brand {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero {
+        grid-template-columns: 1.05fr 1fr;
+        margin: 58px 0 48px;
+    }
+
+    .hero figure {
+        transform: none;
+    }
+
+    .hero img {
+        max-height: none;
+    }
+
+    .stat-strip {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stat-strip p {
+        padding: 0 24px;
+        border-bottom: 0;
+        border-right: 1px solid var(--line);
+    }
+
+    .stat-strip strong {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .section-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .section-heading a {
+        margin-bottom: 0;
+    }
+
+    .cards, .guide {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .fact-panel {
+        grid-template-columns: 1fr 1fr;
+        padding: 40px;
+    }
+
+    .filters {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .quiz-panel {
+        padding: 32px;
+    }
+
+    fieldset {
+        padding: 20px;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 40px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px 32px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .nav-wrap {
+        flex-wrap: nowrap;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    nav, .js nav {
+        display: flex;
+        width: auto;
+        gap: 26px;
+    }
+
+    .hero {
+        gap: 55px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .guide {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-layout {
+        gap: 70px;
+    }
+
+    footer {
+        padding-inline: max(32px, calc((100vw - 1176px)/2));
+    }
+}

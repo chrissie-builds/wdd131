@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Site Plan</title>
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals site plan for project.">
+    <meta name="author" content="Chrissie">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo" aria-hidden="true">🕷️</div>
+        <h1>The 8 Legged Web</h1>
+        <p>Website Planning Document | WDD 131</p>
+    </header>
+
+    <main>
+        <!-- 1. Site Name -->
+        <section>
+            <h2>1. Site Name</h2>
+
+            <h3>The 8 Legged Web</h3>
+
+            <p>
+                <strong>Logo concept:</strong>
+                A simple spider icon paired with the words
+                <strong>The 8 Legged Web</strong>.
+            </p>
+
+            <p>
+                I choose this name because I felt it was simple, memorable, clear and straight to the point about what the website is about.
+            </p>
+
+            <p>
+                <strong>Possible domain:</strong>
+                <span class="accent">the8leggedweb.com</span>
+            </p>
+        </section>
+
+        <!-- 2. Site Purpose -->
+        <section>
+            <h2>2. Site Purpose</h2>
+
+            <p>
+                The 8 legged Web is an educational website to help vistors learn all about arachnids like spiders and tarantulas their habitat, behaviour etc.
+            </p>
+
+            <p>
+                The website will provide a home page featuring
+                interesting facts, a species guide containing
+                information about different spiders, and an interactive
+                quiz page where visitors can test their knowledge. A contact page and 
+                a reference page will be added as well.
+            </p>
+
+            <p>
+                The goal is to make learning about these creatures engaging,
+                accessible, and easy to understand.
+            </p>
+
+            <h3>Target Audience</h3>
+            <ul>
+                <li>People who are curious about spiders.</li>
+                <li>Students researching spider species.</li>
+                <li>Nature and wildlife enthusiasts.</li>
+                <li>Visitors who want to learn interesting facts
+                    about spiders.</li>
+            </ul>
+        </section>
+
+        <!-- 3. Scenarios -->
+        <section>
+            <h2>3. Scenarios</h2>
+
+            <ul>
+                <li>
+                    Where do different spider species live, and
+                    what do they eat?
+                </li>
+                <li>
+                    How can I test my knowledge about spiders?
+                </li>
+                <li>
+                    What is an interesting spider fact that I can
+                    share with my friends?
+                </li>
+            </ul>
+        </section>
+
+        <!-- 4. Wireframes -->
+        <section>
+            <h2>4. Home Page Wireframes</h2>
+
+            <h3>Mobile View</h3>
+            <p class="wireframe-label">
+                Narrow screen — sections stack vertically
+            </p>
+
+            <div class="wireframe"
+                 style="max-width: 360px; margin: 0 auto;">
+                <div class="wire-header">
+                    Logo: The 8 Legged Spider Web
+                    <br>
+                    Menu ☰
+                </div>
+
+                <div class="wire-hero">
+                    <p>Hero Heading</p>
+                    <p>Introduction to spiders</p>
+                    <div class="wire-button">Explore Spiders</div>
+                </div>
+
+                <div class="wire-block">
+                    Featured Spider Image
+                </div>
+
+                <div class="wire-block">
+                    <strong>Did You Know?</strong>
+                    <p>Random spider fact</p>
+                    <div class="wire-button">Another Fact</div>
+                </div>
+
+                <div class="wire-block">
+                    <strong>Featured Species</strong>
+                </div>
+
+                <div class="wire-card">
+                    <div class="wire-image">Spider Image 1</div>
+                    <strong>Jumping Spider</strong>
+                    <p>Short description</p>
+                </div>
+
+                <div class="wire-card">
+                    <div class="wire-image">Spider Image 2</div>
+                    <strong>Orb-Weaver</strong>
+                    <p>Short description</p>
+                </div>
+
+                <div class="wire-card">
+                    <div class="wire-image">Spider Image 3</div>
+                    <strong>Wolf Spider</strong>
+                    <p>Short description</p>
+                </div>
+
+                <div class="wire-block">
+                    Link to Spider Quiz
+                </div>
+
+                <div class="wire-footer">
+                    Footer and References Link
+                </div>
+            </div>
+
+            <h3>Desktop View</h3>
+            <p class="wireframe-label">
+                Wider screen — content arranged in columns
+            </p>
+
+            <div class="wireframe desktop-wireframe">
+                <div class="wire-header wire-nav">
+                    <span>Logo: The 8 Legged Web</span>
+                    <span>Home | Species | Quiz | Contact | Sources</span>
+                </div>
+
+                <div class="wire-hero">
+                    <p>Discover the World of Spiders</p>
+                    <p>Learn about species, habitats, and behaviour.</p>
+                    <div class="wire-button">Explore Spiders</div>
+                </div>
+
+                <div class="wire-main-layout">
+                    <div>
+                        <div class="wire-block">
+                            <strong>Featured Species</strong>
+                        </div>
+
+                        <div class="wire-card-grid">
+                            <div class="wire-card">
+                                <div class="wire-image">
+                                    Spider Image 1
+                                </div>
+                                <strong>Jumping Spider</strong>
+                                <p>Short description</p>
+                            </div>
+
+                            <div class="wire-card">
+                                <div class="wire-image">
+                                    Spider Image 2
+                                </div>
+                                <strong>Orb-Weaver</strong>
+                                <p>Short description</p>
+                            </div>
+
+                            <div class="wire-card">
+                                <div class="wire-image">
+                                    Spider Image 3
+                                </div>
+                                <strong>Wolf Spider</strong>
+                                <p>Short description</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside>
+                        <div class="wire-block">
+                            <strong>Did You Know?</strong>
+                            <p>Random spider fact</p>
+                            <div class="wire-button">Another Fact</div>
+                        </div>
+
+                        <div class="wire-block">
+                            Spider Quiz Link
+                        </div>
+                    </aside>
+                </div>
+
+                <div class="wire-footer">
+                    Footer | References | Copyright
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Chrissie. South Africa</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

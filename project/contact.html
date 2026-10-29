@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Contact — explore spider habitats, behaviour and the surprising world of arachnids.">
+        <meta name="author" content="The 8 Legged Web">
+        <title>
+            Contact | The 8 Legged Web
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;family=Source+Serif+4:wght@400;600;700&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <script src="scripts/site.js" defer></script>
+        <script src="../scripts/getdates.js" defer></script>
+    </head>
+
+    <body>
+        <a class="skip" href="#main">
+            Skip to content
+        </a>
+        <header>
+            <div class="nav-wrap">
+                <a class="brand" href="index.html">
+                    <span aria-hidden="true">
+                        🕷️
+                    </span>
+                    The 8 Legged Web
+                </a>
+                <button class="menu" type="button" aria-expanded="false" aria-controls="navigation">
+                    Menu ☰
+                </button>
+                <nav id="navigation" aria-label="Main navigation">
+                    <a href="index.html">
+                        Home
+                    </a>
+                    <a href="species.html">
+                        Species guide
+                    </a>
+                    <a href="quiz.html">
+                        Quiz
+                    </a>
+                    <a href="contact.html" aria-current="page">
+                        Contact
+                    </a>
+                    <a href="sources.html">
+                        Sources
+                    </a>
+                </nav>
+
+            </div>
+        </header>
+
+        <main id="main">
+            <section class="page-intro">
+                <p class="eyebrow">
+                    Keep the curiosity going
+                </p>
+                <h1>
+                    What caught your eye?
+                </h1>
+                <p>
+                    Have an idea for the guide or a question about the site? Practise submitting a message below.
+                </p>
+            </section>
+
+            <section class="contact-layout">
+                <div>
+                    <h2>
+                        A note before you write
+                    </h2>
+                    <p>
+                        This course demonstration validates your message and shows a confirmation. It does not send email or store your personal details.
+                    </p>
+                    <p>
+                        Please do not include sensitive information. For spider identification, consult a local museum or a qualified specialist.
+                    </p>
+                </div>
+                <form id="contact-form">
+                    <label for="name">
+                        Name
+                        <span>
+                            (required)
+                        </span>
+                    </label>
+                    <input id="name" name="name" autocomplete="name" required minlength="2" maxlength="80">
+                    <label for="email">
+                        Email
+                        <span>
+                            (required)
+                        </span>
+                    </label>
+                    <input id="email" name="email" type="email" autocomplete="email" required>
+                    <label for="topic">
+                        Topic
+                        <span>
+                            (required)
+                        </span>
+                    </label>
+                    <select id="topic" name="topic" required>
+                        <option value="">
+                            Choose a topic
+                        </option>
+                        <option>
+                            Website question
+                        </option>
+                        <option>
+                            Content suggestion
+                        </option>
+                        <option>
+                            Accessibility feedback
+                        </option>
+                    </select>
+                    <label for="message">
+                        Message
+                        <span>
+                            (required, at least 10 characters)
+                        </span>
+                    </label>
+                    <textarea id="message" name="message" rows="6" required minlength="10" maxlength="2000">
+                    </textarea>
+                    <label class="check">
+                        <input type="checkbox" required>
+                        I understand this is a demonstration and my message will not be sent.
+                    </label>
+                    <button type="submit">
+                        Submit demo message →
+                    </button>
+                    <p id="contact-result" role="status">
+                    </p>
+                </form>
+            </section>
+
+        </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Chrissie. South Africa</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+    </body>
+</html>

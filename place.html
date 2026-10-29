@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Japan | Place Page</title>
+    <meta name="description" content="Information about Japan including geographic data and current weather conditions.">
+    <meta name="author" content="Chrissie">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Japan</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source
+                    media="(max-width: 701px)"
+                    srcset="images/japan-large.jpg">
+                <source
+                    media="(min-width: 700px)"
+                    srcset="images/japan-small.jpg">
+                <img
+                    src="images/japan-large.jpg"
+                    alt="Scenic view of Japan"
+                    width="1200"
+                    height="700">
+            </picture>
+        </section>
+
+        <section class="data">
+            <h2>Data</h2>
+            <div class="data-list">
+                <p>Area:</p>
+                <span>377,975 sq km</span>
+
+                <p>Population:</p>
+                <span>122,950,000</span>
+
+                <p>Capital:</p>
+                <span>Tokyo</span>
+
+                <p>Languages:</p>
+                <span>Japanese</span>
+
+                <p>Currency:</p>
+                <span>Japanese yen (JPY)</span>
+
+                <p>Time Zone:</p>
+                <span>UTC+09:00 JST</span>
+
+                <p>Calling Code:</p>
+                <span>+81</span>
+
+                <p>Internet TLD:</p>
+                <span>.jp</span>
+            </div>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-icon" aria-hidden="true">
+                <span class="weather-symbol">⛅</span>
+
+                <svg class="weather-svg"
+                     xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 24 24"
+                     aria-hidden="true">
+                    <path d="M17.5 19H7a5 5 0 1 1 1.02-9.9A6.5 6.5 0 0 1 20 12.5a4.5 4.5 0 0 1-2.5 6.5ZM7 17h10.5a2.5 2.5 0 0 0 .34-4.98l-1.05-.15-.15-1.05A4.5 4.5 0 0 0 7.84 11l-.14.78-.8.02A3 3 0 1 0 7 17Z"/>
+                </svg>
+            </div>
+            <div class="weather-list">
+                <p>Temperature:</p>
+                <span>23°C</span>
+
+                <p>Conditions:</p>
+                <span>Mostly cloudy</span>
+
+                <p>Wind:</p>
+                <span>14 km/h</span>
+
+                <p>Wind Chill:</p>
+                <span id="windChill">N/A</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Chrissie - South Africa
+        </p>
+
+        <p id="lastModified">
+            Last Modification:
+        </p>
+    </footer>
+
+</body>
+</html>
